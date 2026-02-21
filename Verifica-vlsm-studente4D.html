@@ -704,7 +704,7 @@
 
     <div class="img-placeholder">
         <div class="icon">📐</div>
-        <div class="label">[IMG_01] — Schema concettuale VLSM: suddivisione del blocco 192.168.0.0/24 in subnet di dimensioni diverse</div>
+        <img src="ImmagineVLSM.png" alt="Schema VLSM">
         <div class="hint">Catturare uno schema o disegno che mostri la suddivisione dello spazio di indirizzamento</div>
     </div>
 </section>
@@ -745,7 +745,7 @@
             Completa la tabella seguente calcolando gli indirizzi per ciascuna subnet.
             Parti dalla subnet più grande e procedi in ordine decrescente: ogni subnet inizia 
             subito dopo l'indirizzo di broadcast della precedente. 
-            Usa i segnaposto <span class="placeholder-cell" style="font-size:12px">___.___.___._______</span> per inserire i valori corretti.
+            Usa i segnaposto <span class="placeholder-cell" style="font-size:12px">192.168.0.0</span> per inserire i valori corretti.
         </p>
     </div>
     <p>
@@ -768,27 +768,27 @@
             <tbody>
                                 <tr>
                     <td><span class="net-tag b">Rete Alfa</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.64</span></td>
+                    <td><span class="placeholder-cell">255.255.255.240 (/28)</span></td>
+                    <td><span class="placeholder-cell">192.168.0.65</span></td>
+                    <td><span class="placeholder-cell">192.168.0.78</span></td>
+                    <td><span class="placeholder-cell">192.168.0.79</span></td>
                 </tr>
                                 <tr>
                     <td><span class="net-tag c">Rete Beta</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.0</span></td>
+                    <td><span class="placeholder-cell">255.255.255.224 (/27)</span></td>
+                    <td><span class="placeholder-cell">192.168.0.1</span></td>
+                    <td><span class="placeholder-cell">192.168.0.30</span></td>
+                    <td><span class="placeholder-cell">192.168.0.31</span></td>
                 </tr>
                                 <tr>
                     <td><span class="net-tag d">Rete Gamma</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.32</span></td>
+                    <td><span class="placeholder-cell">255.255.255.224 (/27)</span></td>
+                    <td><span class="placeholder-cell">192.168.0.33</span></td>
+                    <td><span class="placeholder-cell">192.168.0.62</span></td>
+                    <td><span class="placeholder-cell">192.168.0.63</span></td>
                 </tr>
             </tbody>
         </table>
@@ -815,43 +815,43 @@
                 <tr>
                     <td><code>PC-Alfa1</code></td>
                     <td><span class="net-tag b">Rete Alfa</span></td>
-                    <td><span class="placeholder-cell">192.168.0.______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.65</span></td>
+                    <td><span class="placeholder-cell">192.168.0.65</span></td>
                     <td><code>—</code></td>
                 </tr>
                 <tr>
                     <td><code>PC-Alfa2</code></td>
                     <td><span class="net-tag b">Rete Alfa</span></td>
-                    <td><span class="placeholder-cell">192.168.0.______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.66</span></td>
+                    <td><span class="placeholder-cell">192.168.0.65</span></td>
                     <td><code>—</code></td>
                 </tr>
                 <tr>
                     <td><code>PC-Beta1</code></td>
                     <td><span class="net-tag c">Rete Beta</span></td>
-                    <td><span class="placeholder-cell">192.168.0.______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.1</span></td>
+                    <td><span class="placeholder-cell">192.168.0.1</span></td>
                     <td><code>—</code></td>
                 </tr>
                 <tr>
                     <td><code>PC-Beta2</code></td>
                     <td><span class="net-tag c">Rete Beta</span></td>
-                    <td><span class="placeholder-cell">192.168.0.______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.2</span></td>
+                    <td><span class="placeholder-cell">192.168.0.1</span></td>
                     <td><code>—</code></td>
                 </tr>
                 <tr>
                     <td><code>PC-Gamma1</code></td>
                     <td><span class="net-tag d">Rete Gamma</span></td>
-                    <td><span class="placeholder-cell">192.168.0.______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.33</span></td>
+                    <td><span class="placeholder-cell">192.168.0.33</span></td>
                     <td><code>—</code></td>
                 </tr>
                 <tr>
                     <td><code>PC-Gamma2</code></td>
                     <td><span class="net-tag d">Rete Gamma</span></td>
-                    <td><span class="placeholder-cell">192.168.0.______</span></td>
-                    <td><span class="placeholder-cell">___.___.___._______</span></td>
+                    <td><span class="placeholder-cell">192.168.0.34</span></td>
+                    <td><span class="placeholder-cell">192.168.0.33</span></td>
                     <td><code>—</code></td>
                 </tr>
             </tbody>
@@ -913,7 +913,7 @@
             </p>
             <div class="img-placeholder">
                 <div class="icon">🖥️</div>
-                <div class="label">[IMG_02] — Schermata iniziale di Packet Tracer con il workspace vuoto</div>
+                <img src="ImmagineIniziale.png" alt="Schema VLSM">
                 <div class="hint">Cattura la schermata di Packet Tracer appena aperto</div>
             </div>
         </div>
@@ -930,7 +930,7 @@
             </p>
             <div class="img-placeholder">
                 <div class="icon">🔌</div>
-                <div class="label">[IMG_03] — Selezione e posizionamento dello switch 2960</div>
+                <img src="ImmagineSwitch.png" alt="Schema VLSM">
                 <div class="hint">Mostra la barra dei dispositivi con la categoria Switches evidenziata e lo switch nell'area di lavoro</div>
             </div>
         </div>
